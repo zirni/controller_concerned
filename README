@@ -4,7 +4,6 @@ I know, the better way is to refactor your controller code to avoid masses of li
 but if you haven't enough time for refactoring, try this.
 
   class UsersController < ApplicationController
-    include ControllerConcerned
     controller_concerned
   end
   
