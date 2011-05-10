@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Matthias Zirnstein"]
   s.email       = ["matthias.zirnstein@googlemail.com"]
-  s.homepage    = "https://github.com/zirni/concerned_controller"
+  s.homepage    = "https://github.com/zirni/controller_concerned"
   s.summary     = %q{Organize your controller and place each action/functionality in a separate file}
   s.description = %q{}
 

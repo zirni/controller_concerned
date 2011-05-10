@@ -6,7 +6,7 @@ module ControllerConcerned
   end
   
   module ClassMethods
-    def concerned_controller
+    def controller_concerned
       module_name = self.name.underscore.gsub(/_controller$/, "") << "_concerns"
       concerned_path  = Rails.root.join("app", "controllers", module_name)
       

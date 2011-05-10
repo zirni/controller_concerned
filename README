@@ -1,13 +1,13 @@
 Organize your controller and place each action/functionality in a separate file.
-Especially if your controller actions are too big you can use concerned_controller.
+Especially if your controller actions are too big you can use controller_concerned.
 I know, the better way is to refactor your controller code to avoid masses of lines,
 but if you haven't enough time for refactoring, try this.
 
   class UsersController < ApplicationController
     include ControllerConcerned
-    concerned_controller
+    controller_concerned
   end
   
-For UsersController concerned_controller will include all *.rb files
+For UsersController controller_concerned will include all *.rb files
 found in controller/users_concerns
 
