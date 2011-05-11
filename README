@@ -4,9 +4,16 @@ I know, the better way is to refactor your controller code to avoid masses of li
 but if you haven't enough time for refactoring, try this.
 
   class UsersController < ApplicationController
-    controller_concerned
+    concerned_with :searching
   end
   
-For UsersController controller_concerned will include all *.rb files
-found in controller/users_concerns
+concerned_with will require files at controller/users/
+Just add a file to controller/users/ and thats it.
+
+  name: searching.rb
+  
+  class UsersController
+    def search
+    end
+  end
 
